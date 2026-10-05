@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 720" width="1500" height="720" font-family="Arial, Helvetica, sans-serif">
+<rect width="1500" height="720" fill="#FFFFFF"/>
+<rect x="70" y="70" width="300" height="114" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M70,106 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="84" y="94" font-size="15" font-weight="bold" fill="#FFFFFF">bookings</text>
+<rect x="80" y="111" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="92" y="123" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="140" y="124" font-size="13" font-weight="bold" fill="#1F2937">book_ref</text>
+<text x="358" y="124" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(6)</text>
+<rect x="71" y="132" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="150" font-size="13" fill="#1F2937">book_date</text>
+<text x="358" y="150" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">timestamptz</text>
+<text x="140" y="176" font-size="13" fill="#1F2937">total_amount</text>
+<text x="358" y="176" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">numeric(10,2)</text>
+<rect x="70" y="270" width="300" height="166" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M70,306 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="84" y="294" font-size="15" font-weight="bold" fill="#FFFFFF">tickets</text>
+<rect x="80" y="311" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="92" y="323" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="140" y="324" font-size="13" font-weight="bold" fill="#1F2937">ticket_no</text>
+<text x="358" y="324" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(13)</text>
+<rect x="71" y="332" width="298" height="26" fill="#F9FAFB"/>
+<rect x="80" y="337" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="92" y="349" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="140" y="350" font-size="13" fill="#1F2937">book_ref</text>
+<text x="358" y="350" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(6)</text>
+<text x="140" y="376" font-size="13" fill="#1F2937">passenger_id</text>
+<text x="358" y="376" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(20)</text>
+<rect x="71" y="384" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="402" font-size="13" fill="#1F2937">passenger_name</text>
+<text x="358" y="402" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">text</text>
+<text x="140" y="428" font-size="13" fill="#1F2937">contact_data</text>
+<text x="358" y="428" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">jsonb</text>
+<rect x="430" y="270" width="300" height="140" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M430,306 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="444" y="294" font-size="15" font-weight="bold" fill="#FFFFFF">ticket_flights</text>
+<rect x="440" y="311" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="452" y="323" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<rect x="468" y="311" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="480" y="323" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="500" y="324" font-size="13" font-weight="bold" fill="#1F2937">ticket_no</text>
+<text x="718" y="324" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(13)</text>
+<rect x="431" y="332" width="298" height="26" fill="#F9FAFB"/>
+<rect x="440" y="337" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="452" y="349" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<rect x="468" y="337" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="480" y="349" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="500" y="350" font-size="13" font-weight="bold" fill="#1F2937">flight_id</text>
+<text x="718" y="350" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<text x="500" y="376" font-size="13" fill="#1F2937">fare_conditions</text>
+<text x="718" y="376" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(10)</text>
+<rect x="431" y="384" width="298" height="26" fill="#F9FAFB"/>
+<text x="500" y="402" font-size="13" fill="#1F2937">amount</text>
+<text x="718" y="402" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">numeric(10,2)</text>
+<rect x="430" y="490" width="300" height="140" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M430,526 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="444" y="514" font-size="15" font-weight="bold" fill="#FFFFFF">boarding_passes</text>
+<rect x="440" y="531" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="452" y="543" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<rect x="468" y="531" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="480" y="543" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="500" y="544" font-size="13" font-weight="bold" fill="#1F2937">ticket_no</text>
+<text x="718" y="544" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(13)</text>
+<rect x="431" y="552" width="298" height="26" fill="#F9FAFB"/>
+<rect x="440" y="557" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="452" y="569" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<rect x="468" y="557" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="480" y="569" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="500" y="570" font-size="13" font-weight="bold" fill="#1F2937">flight_id</text>
+<text x="718" y="570" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<text x="500" y="596" font-size="13" fill="#1F2937">boarding_no</text>
+<text x="718" y="596" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="431" y="604" width="298" height="26" fill="#F9FAFB"/>
+<text x="500" y="622" font-size="13" fill="#1F2937">seat_no</text>
+<text x="718" y="622" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(4)</text>
+<rect x="790" y="170" width="300" height="296" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M790,206 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="804" y="194" font-size="15" font-weight="bold" fill="#FFFFFF">flights</text>
+<rect x="800" y="211" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="812" y="223" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="860" y="224" font-size="13" font-weight="bold" fill="#1F2937">flight_id</text>
+<text x="1078" y="224" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="791" y="232" width="298" height="26" fill="#F9FAFB"/>
+<text x="860" y="250" font-size="13" fill="#1F2937">flight_no</text>
+<text x="1078" y="250" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(6)</text>
+<text x="860" y="276" font-size="13" fill="#1F2937">scheduled_departure</text>
+<text x="1078" y="276" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">timestamptz</text>
+<rect x="791" y="284" width="298" height="26" fill="#F9FAFB"/>
+<text x="860" y="302" font-size="13" fill="#1F2937">scheduled_arrival</text>
+<text x="1078" y="302" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">timestamptz</text>
+<rect x="800" y="315" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="812" y="327" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="860" y="328" font-size="13" fill="#1F2937">departure_airport</text>
+<text x="1078" y="328" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(3)</text>
+<rect x="791" y="336" width="298" height="26" fill="#F9FAFB"/>
+<rect x="800" y="341" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="812" y="353" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="860" y="354" font-size="13" fill="#1F2937">arrival_airport</text>
+<text x="1078" y="354" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(3)</text>
+<text x="860" y="380" font-size="13" fill="#1F2937">status</text>
+<text x="1078" y="380" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(20)</text>
+<rect x="791" y="388" width="298" height="26" fill="#F9FAFB"/>
+<rect x="800" y="393" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="812" y="405" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="860" y="406" font-size="13" fill="#1F2937">aircraft_code</text>
+<text x="1078" y="406" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(3)</text>
+<text x="860" y="432" font-size="13" fill="#1F2937">actual_departure</text>
+<text x="1078" y="432" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">timestamptz</text>
+<rect x="791" y="440" width="298" height="26" fill="#F9FAFB"/>
+<text x="860" y="458" font-size="13" fill="#1F2937">actual_arrival</text>
+<text x="1078" y="458" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">timestamptz</text>
+<rect x="1150" y="50" width="300" height="192" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1150,86 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1164" y="74" font-size="15" font-weight="bold" fill="#FFFFFF">airports</text>
+<rect x="1160" y="91" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1172" y="103" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1220" y="104" font-size="13" font-weight="bold" fill="#1F2937">airport_code</text>
+<text x="1438" y="104" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(3)</text>
+<rect x="1151" y="112" width="298" height="26" fill="#F9FAFB"/>
+<text x="1220" y="130" font-size="13" fill="#1F2937">airport_name</text>
+<text x="1438" y="130" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">text</text>
+<text x="1220" y="156" font-size="13" fill="#1F2937">city</text>
+<text x="1438" y="156" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">text</text>
+<rect x="1151" y="164" width="298" height="26" fill="#F9FAFB"/>
+<text x="1220" y="182" font-size="13" fill="#1F2937">longitude</text>
+<text x="1438" y="182" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">float8</text>
+<text x="1220" y="208" font-size="13" fill="#1F2937">latitude</text>
+<text x="1438" y="208" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">float8</text>
+<rect x="1151" y="216" width="298" height="26" fill="#F9FAFB"/>
+<text x="1220" y="234" font-size="13" fill="#1F2937">timezone</text>
+<text x="1438" y="234" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">text</text>
+<rect x="1150" y="320" width="300" height="114" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1150,356 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1164" y="344" font-size="15" font-weight="bold" fill="#FFFFFF">aircrafts</text>
+<rect x="1160" y="361" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1172" y="373" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1220" y="374" font-size="13" font-weight="bold" fill="#1F2937">aircraft_code</text>
+<text x="1438" y="374" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(3)</text>
+<rect x="1151" y="382" width="298" height="26" fill="#F9FAFB"/>
+<text x="1220" y="400" font-size="13" fill="#1F2937">model</text>
+<text x="1438" y="400" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">text</text>
+<text x="1220" y="426" font-size="13" fill="#1F2937">range</text>
+<text x="1438" y="426" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1150" y="490" width="300" height="114" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1150,526 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1164" y="514" font-size="15" font-weight="bold" fill="#FFFFFF">seats</text>
+<rect x="1160" y="531" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1172" y="543" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<rect x="1188" y="531" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="1200" y="543" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="1220" y="544" font-size="13" font-weight="bold" fill="#1F2937">aircraft_code</text>
+<text x="1438" y="544" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">char(3)</text>
+<rect x="1151" y="552" width="298" height="26" fill="#F9FAFB"/>
+<rect x="1160" y="557" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1172" y="569" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1220" y="570" font-size="13" font-weight="bold" fill="#1F2937">seat_no</text>
+<text x="1438" y="570" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(4)</text>
+<text x="1220" y="596" font-size="13" fill="#1F2937">fare_conditions</text>
+<text x="1438" y="596" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(10)</text>
+<path d="M70,345.0 H40 V119.0 H70" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M59,345.0 L70,339.0 M59,345.0 L70,351.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M61,113.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M430,319.0 H400 V319.0 H370" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M419,319.0 L430,313.0 M419,319.0 L430,325.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M379,313.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M730,345.0 H768 V219.0 H790" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M741,345.0 L730,339.0 M741,345.0 L730,351.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M781,213.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M730,552.0 H752 V332.0 H730" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M737,546.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<circle cx="745" cy="552.0" r="4" fill="#FFFFFF" stroke="#2F5DA8" stroke-width="1.6"/>
+<path d="M739,326.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1090,323.0 H1112 V93.28 H1150" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1101,323.0 L1090,317.0 M1101,323.0 L1090,329.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1141,87.28 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1090,349.0 H1128 V104.72 H1150" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1101,349.0 L1090,343.0 M1101,349.0 L1090,355.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1141,98.72 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1090,401.0 H1120 V369.0 H1150" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1101,401.0 L1090,395.0 M1101,401.0 L1090,407.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1141,363.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1450,539.0 H1478 V369.0 H1450" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1461,539.0 L1450,533.0 M1461,539.0 L1450,545.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1459,363.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M70,640 H1450" stroke="#D1D5DB"/>
+<rect x="70" y="659" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="82" y="671" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="102" y="672" font-size="13" fill="#1F2937">первичный ключ</text>
+<rect x="230" y="659" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="242" y="671" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="262" y="672" font-size="13" fill="#1F2937">внешний ключ</text>
+<path d="M380,667 h60" stroke="#2F5DA8" stroke-width="1.6"/>
+<path d="M391,667 L380,661 M391,667 L380,673" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M431,661 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<text x="452" y="672" font-size="13" fill="#1F2937">много строк ссылаются на одну: «лапка» — у таблицы с внешним ключом, черта — у таблицы, на которую ссылаются</text>
+<path d="M380,693 h60" stroke="#2F5DA8" stroke-width="1.6"/>
+<path d="M387,687 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<circle cx="395" cy="693" r="4" fill="#FFFFFF" stroke="#2F5DA8" stroke-width="1.6"/>
+<path d="M431,687 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<text x="452" y="698" font-size="13" fill="#1F2937">не больше одной строки: у перелёта либо один посадочный талон, либо ни одного</text>
+</svg>
