@@ -2,6 +2,8 @@
 FROM python:3.12-slim
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
+# Отключаем всплывающий вопрос «получать новости Jupyter?» при первом открытии.
+RUN jupyter labextension disable "@jupyterlab/apputils-extension:announcements"
 # В /work монтируется папка репозитория: ноутбуки сохраняются на вашем компьютере.
 WORKDIR /work
 # Токен и пароль отключены: Jupyter доступен только с этого компьютера (см. ports в compose).
