@@ -1,8 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 850" width="1760" height="850" font-family="Arial, Helvetica, sans-serif">
-<rect width="1760" height="850" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1236" width="1760" height="1236" font-family="Arial, Helvetica, sans-serif">
+<rect width="1760" height="1236" fill="#FFFFFF"/>
 <text x="80" y="40" font-size="24" font-weight="bold" fill="#1F2937">Онлайн-аукцион: ядро схемы в нотации Чена</text>
 <text x="80" y="66" font-size="14" fill="#6B7280">Та же нотация, что в лекциях. Показана только часть схемы — почему, написано внизу.</text>
 <path d="M80,84 H1700" stroke="#D1D5DB"/>
+<rect x="80" y="104" width="1620" height="320" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<text x="98" y="128" font-size="13" font-weight="bold" fill="#2F5DA8" letter-spacing="0.5">ОПИСАНИЕ СИСТЕМЫ, ДЛЯ КОТОРОЙ СТРОИТСЯ ДИАГРАММА</text>
+<text x="98.0" y="162" font-size="14" font-weight="bold" fill="#1F2937">Регистрация</text>
+<text x="120.0" y="184" font-size="14" fill="#6B7280" text-anchor="end">1.</text>
+<text x="128.0" y="184" font-size="14" fill="#1F2937" xml:space="preserve">В системе регистрируются пользователи. Одни выставляют вещи на продажу, другие покупают.</text>
+<text x="98.0" y="218" font-size="14" font-weight="bold" fill="#1F2937">Лоты</text>
+<text x="120.0" y="240" font-size="14" fill="#6B7280" text-anchor="end">2.</text>
+<text x="128.0" y="240" font-size="14" fill="#1F2937" xml:space="preserve">Продавец выставляет лот: описание товара или услуги и фотографии.</text>
+<text x="120.0" y="264" font-size="14" fill="#6B7280" text-anchor="end">3.</text>
+<text x="128.0" y="264" font-size="14" fill="#1F2937" xml:space="preserve">У лота есть теги — категории, к которым относится товар или услуга. Тегов может быть несколько.</text>
+<text x="120.0" y="288" font-size="14" fill="#6B7280" text-anchor="end">4.</text>
+<text x="128.0" y="288" font-size="14" fill="#1F2937" xml:space="preserve">Для лота назначаются дата и время начала аукциона, дата и время завершения аукциона и начальная </text>
+<text x="128.0" y="308" font-size="14" fill="#1F2937" xml:space="preserve">(минимальная) цена.</text>
+<text x="120.0" y="332" font-size="14" fill="#6B7280" text-anchor="end">5.</text>
+<text x="128.0" y="332" font-size="14" fill="#1F2937" xml:space="preserve">Продавец может в любой момент отменить незавершённый аукцион.</text>
+<text x="98.0" y="366" font-size="14" font-weight="bold" fill="#1F2937">Поиск</text>
+<text x="120.0" y="388" font-size="14" fill="#6B7280" text-anchor="end">6.</text>
+<text x="128.0" y="388" font-size="14" fill="#1F2937" xml:space="preserve">Покупатели ищут лоты по тегам, по словам из описания, по датам начала и завершения, по текущей цене.</text>
+<text x="910.0" y="162" font-size="14" font-weight="bold" fill="#1F2937">Ставки</text>
+<text x="932.0" y="184" font-size="14" fill="#6B7280" text-anchor="end">7.</text>
+<text x="940.0" y="184" font-size="14" fill="#1F2937" xml:space="preserve">В любом незавершённом аукционе любой покупатель может сделать ставку, превышающую текущую цену </text>
+<text x="940.0" y="204" font-size="14" fill="#1F2937" xml:space="preserve">этого аукциона.</text>
+<text x="932.0" y="228" font-size="14" fill="#6B7280" text-anchor="end">8.</text>
+<text x="940.0" y="228" font-size="14" fill="#1F2937" xml:space="preserve">Текущая цена — это последняя ставка. Если ставок ещё не было — начальная цена.</text>
+<text x="932.0" y="252" font-size="14" fill="#6B7280" text-anchor="end">9.</text>
+<text x="940.0" y="252" font-size="14" fill="#1F2937" xml:space="preserve">Один покупатель может сделать несколько ставок в одном аукционе, но не подряд.</text>
+<text x="932.0" y="276" font-size="14" fill="#6B7280" text-anchor="end">10.</text>
+<text x="940.0" y="276" font-size="14" fill="#1F2937" xml:space="preserve">Покупатель может отменить свою последнюю ставку. Тогда текущей станет предыдущая ставка, и её тоже </text>
+<text x="940.0" y="296" font-size="14" fill="#1F2937" xml:space="preserve">можно будет отменить, и так далее.</text>
+<text x="910.0" y="330" font-size="14" font-weight="bold" fill="#1F2937">Завершение</text>
+<text x="932.0" y="352" font-size="14" fill="#6B7280" text-anchor="end">11.</text>
+<text x="940.0" y="352" font-size="14" fill="#1F2937" xml:space="preserve">После наступления момента завершения аукциона победителем становится покупатель, сделавший </text>
+<text x="940.0" y="372" font-size="14" fill="#1F2937" xml:space="preserve">последнюю ставку.</text>
+<text x="932.0" y="396" font-size="14" fill="#6B7280" text-anchor="end">12.</text>
+<text x="940.0" y="396" font-size="14" fill="#1F2937" xml:space="preserve">Покупатель выплачивает владельцу системы комиссию с каждого завершённого аукциона.</text>
+<text x="80" y="464" font-size="13" font-weight="bold" fill="#2F5DA8" letter-spacing="0.5">ДИАГРАММА</text>
+<g transform="translate(0,384)">
 <path d="M260.0,140.0 L350.0,140.0" stroke="#4B5563" stroke-width="1.4"/>
 <rect x="294.0" y="129.0" width="22" height="22" rx="4" fill="#FFFFFF"/>
 <text x="305.0" y="145.0" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">1</text>
@@ -105,4 +142,5 @@
 <text x="94.0" y="748.0" font-size="14" fill="#1F2937"><tspan xml:space="preserve">в</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">нечитаемое</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">облако.</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">Поэтому</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">здесь</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">только</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">ядро,</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">и</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">атрибуты</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">—</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">лишь</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">у</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">двух</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">сущностей.</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">Не</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">показаны</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">фотографии,</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">комиссия</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">и</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">служебные</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">поля.</tspan></text>
 <text x="94.0" y="788.0" font-size="14" fill="#1F2937"><tspan xml:space="preserve">Отсюда</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">практический</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">вывод:</tspan><tspan xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">нотация</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">Чена</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">удобна,</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">чтобы</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">обсуждать</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">структуру</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">и</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">связи</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">—</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">на</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">бумаге,</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">у</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">доски,</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">с</tspan><tspan xml:space="preserve"> </tspan><tspan xml:space="preserve">заказчиком.</tspan><tspan xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">Для</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">реальной</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">схемы</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">с</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">полями</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">и</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan></text>
 <text x="94.0" y="808.0" font-size="14" fill="#1F2937"><tspan font-weight="bold" xml:space="preserve">типами</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">используют</tspan><tspan font-weight="bold" xml:space="preserve"> </tspan><tspan font-weight="bold" xml:space="preserve">таблицы</tspan><tspan xml:space="preserve">.</tspan></text>
+</g>
 </svg>

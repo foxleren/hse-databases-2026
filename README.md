@@ -5,7 +5,7 @@
 
 | Папка | Что внутри |
 |---|---|
-| `week_1/` | Семинар 1 «Онлайн-аукцион»: решение задачи семинара, ядро схемы в нотации Чена — [`classwork_1_solution.svg`](week_1/classwork_1_solution.svg). Домашнее задание 1 «ER-модель музыкального сервиса» — `homework_1.pdf` |
+| `week_1/` | Семинар 1 «Онлайн-аукцион»: описание системы и решение задачи семинара, ядро схемы в нотации Чена — [`classwork_1_solution.svg`](week_1/classwork_1_solution.svg). Домашнее задание 1 «ER-модель музыкального сервиса» — `homework_1.pdf` |
 | `week_2/` | Семинар 2 «Идентичность и ключи»: презентация `presentation_2.pdf`. Домашнее задание 2 «Ключи» — `homework_2.pdf` |
 | `week_3/` | Семинар 3 «Первые шаги в SQL»: презентация `presentation_3.pdf`, задачи `classwork_3.ipynb` и они же с решениями и разбором — `classwork_3_solution.ipynb` |
 | `week_4/` | Семинар 4 «Запросы к одной таблице»: презентация `presentation_4.pdf`, задачи `classwork_4.ipynb` и `classwork_4_solution.ipynb`. Домашнее задание 3 — `homework_3.ipynb` |
