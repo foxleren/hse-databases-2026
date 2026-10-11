@@ -1,11 +1,13 @@
 # Учебное окружение курса: PostgreSQL 17 с демобазой авиаперевозок и Jupyter.
+# Оба сервиса запускаются из готовых образов с Docker Hub: собирать ничего не нужно.
+# Из чего собраны образы и как собрать их самому — в docker-compose.build.yml.
 # Запуск: docker compose up -d      Остановка: docker compose down
 # Логин, пароль и порты лежат в файле .env рядом.
 name: hse-databases
 
 services:
   postgres:
-    build: ./db
+    image: foxleren/hse-databases-postgres:1.0.0
     container_name: hse-db-postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -26,7 +28,7 @@ services:
       retries: 100
 
   jupyter:
-    build: ./jupyter
+    image: foxleren/hse-databases-jupyter:1.0.0
     container_name: hse-db-jupyter
     environment:
       # Внутри сети Docker база доступна по имени сервиса и своему внутреннему порту.

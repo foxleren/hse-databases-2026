@@ -1,0 +1,15 @@
+# Сборка образов курса из исходников. Студентам для работы этот файл не нужен:
+# docker compose up -d берёт готовые образы с Docker Hub.
+#
+# Собрать образы у себя вместо скачивания (например, если Docker Hub недоступен):
+#   docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
+#
+# Собрать под Windows/Linux (amd64) и Mac на Apple Silicon (arm64) и опубликовать новую версию
+# (нужен docker login; номер версии меняется в docker-compose.yml):
+#   docker buildx bake -f docker-compose.yml -f docker-compose.build.yml \
+#       --set '*.platform=linux/amd64,linux/arm64' --push
+services:
+  postgres:
+    build: ./db
+  jupyter:
+    build: ./jupyter

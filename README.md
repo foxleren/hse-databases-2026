@@ -11,7 +11,7 @@
 | `week_4/` | Семинар 4 «Запросы к одной таблице»: презентация `presentation_4.pdf`, задачи `classwork_4.ipynb` и `classwork_4_solution.ipynb`. Домашнее задание 3 — `homework_3.ipynb` |
 | `week_5/` | Семинар 5 «Агрегация в SQL»: презентация `presentation_5.pdf`, задачи `classwork_5.ipynb` |
 | [`db/schema.md`](db/schema.md) | Схема демобазы: таблицы, столбцы, ключи и связи между таблицами |
-| `db/`, `jupyter/`, `docker-compose.yml`, `.env` | Учебное окружение. Менять эти файлы не нужно |
+| `db/`, `jupyter/`, `docker-compose.yml`, `docker-compose.build.yml`, `.env` | Учебное окружение. Менять эти файлы не нужно |
 
 Ниже — инструкция по настройке. Она написана для тех, кто раньше не работал ни с Docker, ни с базами
 данных. Идите по шагам сверху вниз и ничего не пропускайте: на всё уйдёт 20–30 минут, большая часть
@@ -180,10 +180,9 @@ docker compose up -d
 
 Что происходит в первый раз (5–10 минут, зависит от скорости интернета):
 
-1. Docker скачивает PostgreSQL и Python.
-2. Скачивает демобазу с сайта Postgres Pro.
-3. Запускает PostgreSQL и загружает в него данные.
-4. Запускает Jupyter.
+1. Docker скачивает два готовых образа: PostgreSQL с демобазой и Jupyter (вместе около 350 МБ).
+2. Запускает PostgreSQL и загружает в него данные.
+3. Запускает Jupyter.
 
 Команда закончила работу, когда в конце появились строки:
 
@@ -285,7 +284,7 @@ DBeaver — бесплатная программа для работы с ба�
 **Engine running** и выполните `docker compose up -d`.
 
 Если в репозитории появились новые задания: скачайте их (`git pull` или заново архивом) и выполните
-`docker compose up -d --build`.
+`docker compose up -d`.
 
 ## 8. Если что-то не работает
 
@@ -315,10 +314,12 @@ Docker Desktop не запущен. Запустите его и дождите�
 Порт занят другим Jupyter. В файле `.env` замените `JUPYTER_PORT=8888` на `JUPYTER_PORT=8889`,
 выполните `docker compose up -d` и открывайте в браузере <http://localhost:8889>.
 
-**Ошибка при первом запуске со словами `edu.postgrespro.ru`, `failed to load cache key`
-или `failed to resolve source metadata`.**
-Не удалось что-то скачать. Проверьте интернет, выключите или, наоборот, включите VPN и повторите
-`docker compose up -d` — загрузка продолжится с того места, где оборвалась.
+**Ошибка при первом запуске со словами `registry-1.docker.io`, `TLS handshake timeout`,
+`failed to resolve` или `pull access denied`.**
+Не удалось скачать образы с Docker Hub. Проверьте интернет, выключите или, наоборот, включите VPN
+и повторите `docker compose up -d` — загрузка продолжится с того места, где оборвалась.
+Если Docker Hub недоступен совсем, образы можно собрать у себя:
+`docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build`.
 
 **Ноутбук пишет «НЕ УДАЛОСЬ ПОДКЛЮЧИТЬСЯ К БАЗЕ».**
 База не запущена. Выполните `docker compose ps`: если `hse-db-postgres` в списке нет или у него нет
@@ -337,7 +338,7 @@ Jupyter в контейнере работает от имени админис�
 Верните себе права командой `sudo chown -R $USER .` в папке репозитория.
 
 **Всё запуталось, хочу начать с чистого листа.**
-Выполните `docker compose down -v`, затем `docker compose up -d --build`. База будет создана заново.
+Выполните `docker compose down -v`, затем `docker compose up -d`. База будет создана заново.
 
 ## 9. Запасной путь: Jupyter на своём Python
 
