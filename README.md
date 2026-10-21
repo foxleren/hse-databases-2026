@@ -11,6 +11,7 @@
 | `week_4/` | Семинар 4 «Запросы к одной таблице»: презентация `presentation_4.pdf`, задачи `classwork_4.ipynb` и `classwork_4_solution.ipynb`. Домашнее задание 3 — `homework_3.ipynb` |
 | `week_5/` | Семинар 5 «Агрегация в SQL»: презентация `presentation_5.pdf`, задачи `classwork_5.ipynb` |
 | `week_6/` | Семинар 6 «JOIN и операции над множествами»: презентация `presentation_6.pdf`, задачи `classwork_6.ipynb` |
+| `week_7/` | Семинар 7 «Подзапросы и общие табличные выражения»: презентация `presentation_7.pdf`, задачи `classwork_7.ipynb` |
 | [`db/schema.md`](db/schema.md) | Схема демобазы: таблицы, столбцы, ключи и связи между таблицами |
 | `db/`, `jupyter/`, `docker-compose.yml`, `docker-compose.build.yml`, `.env` | Учебное окружение. Менять эти файлы не нужно |
 
@@ -194,7 +195,7 @@ git clone https://github.com/foxleren/hse-databases-2026.git
 - **Linux.** Нажмите правой кнопкой на папке в файловом менеджере и выберите **Открыть в терминале**.
 
 Проверьте, что вы в нужной папке: команда `ls` должна показать файлы `docker-compose.yml`,
-`README.md` и папки `week_1` … `week_6`.
+`README.md` и папки `week_1` … `week_7`.
 
 ### Выполните одну команду
 
