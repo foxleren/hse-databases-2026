@@ -1,4 +1,4 @@
-# Учебное окружение курса: PostgreSQL 17 с демобазой авиаперевозок и Jupyter.
+# Учебное окружение курса: PostgreSQL 17 с учебной базой hse_databases и Jupyter.
 # Оба сервиса запускаются из готовых образов с Docker Hub: собирать ничего не нужно.
 # Из чего собраны образы и как собрать их самому — в docker-compose.build.yml.
 # Запуск: docker compose up -d      Остановка: docker compose down
@@ -7,7 +7,7 @@ name: hse-databases
 
 services:
   postgres:
-    image: foxleren/hse-databases-postgres:1.0.0
+    image: foxleren/hse-databases-postgres:2.0.0
     container_name: hse-db-postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -19,10 +19,10 @@ services:
       - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-    # Контейнер считается готовым, когда демобаза загружена: пока идёт заливка,
+    # Контейнер считается готовым, когда загружены все учебные базы: пока идёт заливка,
     # сервер не принимает подключения по сети.
     healthcheck:
-      test: ["CMD-SHELL", "psql -h 127.0.0.1 -U \"$$POSTGRES_USER\" -d demo -c 'SELECT 1 FROM bookings.airports LIMIT 1'"]
+      test: ["CMD-SHELL", "psql -h 127.0.0.1 -U \"$$POSTGRES_USER\" -d hse_databases -c 'SELECT 1 FROM music_store.track LIMIT 1'"]
       interval: 3s
       timeout: 5s
       retries: 100

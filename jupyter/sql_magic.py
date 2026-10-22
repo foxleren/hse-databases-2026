@@ -1,4 +1,4 @@
-"""Магия %%sql: выполняет ячейку в демобазе и показывает результат таблицей.
+"""Магия %%sql: выполняет ячейку в учебной базе hse_databases и показывает результат таблицей.
 
 Ноутбук подключает её так:
 
@@ -25,6 +25,7 @@ import psycopg
 from IPython.display import display
 
 ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
+DBNAME = "hse_databases"
 
 pd.options.display.max_rows = 50
 pd.options.display.max_colwidth = 200
@@ -43,6 +44,14 @@ def _read_env(path):
 
 
 def _connection_error_hint(error):
+    if f'database "{DBNAME}" does not exist' in str(error):
+        # том базы создан образом до версии 2.0.0, где база называлась demo
+        return (
+            f"НЕ НАЙДЕНА БАЗА {DBNAME}: у вас база от старой версии окружения.\n"
+            "Пересоздайте базу командами `docker compose down -v` и `docker compose up -d`\n"
+            "в папке репозитория. Таблицы, которые вы создали сами, при этом удалятся.\n"
+            f"Текст ошибки: {error}".rstrip()
+        )
     return (
         "НЕ УДАЛОСЬ ПОДКЛЮЧИТЬСЯ К БАЗЕ.\n"
         "Проверьте, что Docker запущен и база поднята: команда `docker compose ps`\n"
@@ -58,7 +67,7 @@ def _connect():
         _conn = psycopg.connect(
             host=os.environ.get("PGHOST", "localhost"),
             port=os.environ.get("PGPORT") or env.get("POSTGRES_PORT", "5432"),
-            dbname="demo",
+            dbname=DBNAME,
             user=env["POSTGRES_USER"],
             password=env["POSTGRES_PASSWORD"],
             autocommit=True,

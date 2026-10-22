@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1880 1090" width="1880" height="1090" font-family="Arial, Helvetica, sans-serif">
+<rect width="1880" height="1090" fill="#FFFFFF"/>
+<rect x="70" y="50" width="300" height="426" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M70,86 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="84" y="74" font-size="15" font-weight="bold" fill="#FFFFFF">employee</text>
+<rect x="80" y="91" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="92" y="103" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="140" y="104" font-size="13" font-weight="bold" fill="#1F2937">employee_id</text>
+<text x="358" y="104" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="71" y="112" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="130" font-size="13" fill="#1F2937">last_name</text>
+<text x="358" y="130" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(20)</text>
+<text x="140" y="156" font-size="13" fill="#1F2937">first_name</text>
+<text x="358" y="156" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(20)</text>
+<rect x="71" y="164" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="182" font-size="13" fill="#1F2937">title</text>
+<text x="358" y="182" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(30)</text>
+<rect x="80" y="195" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="92" y="207" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="140" y="208" font-size="13" fill="#1F2937">reports_to</text>
+<text x="358" y="208" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="71" y="216" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="234" font-size="13" fill="#1F2937">birth_date</text>
+<text x="358" y="234" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">date</text>
+<text x="140" y="260" font-size="13" fill="#1F2937">hire_date</text>
+<text x="358" y="260" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">date</text>
+<rect x="71" y="268" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="286" font-size="13" fill="#1F2937">address</text>
+<text x="358" y="286" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(70)</text>
+<text x="140" y="312" font-size="13" fill="#1F2937">city</text>
+<text x="358" y="312" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<rect x="71" y="320" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="338" font-size="13" fill="#1F2937">state</text>
+<text x="358" y="338" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<text x="140" y="364" font-size="13" fill="#1F2937">country</text>
+<text x="358" y="364" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<rect x="71" y="372" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="390" font-size="13" fill="#1F2937">postal_code</text>
+<text x="358" y="390" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(10)</text>
+<text x="140" y="416" font-size="13" fill="#1F2937">phone</text>
+<text x="358" y="416" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(24)</text>
+<rect x="71" y="424" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="442" font-size="13" fill="#1F2937">fax</text>
+<text x="358" y="442" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(24)</text>
+<text x="140" y="468" font-size="13" fill="#1F2937">email</text>
+<text x="358" y="468" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(60)</text>
+<rect x="70" y="520" width="300" height="374" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M70,556 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="84" y="544" font-size="15" font-weight="bold" fill="#FFFFFF">customer</text>
+<rect x="80" y="561" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="92" y="573" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="140" y="574" font-size="13" font-weight="bold" fill="#1F2937">customer_id</text>
+<text x="358" y="574" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="71" y="582" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="600" font-size="13" fill="#1F2937">first_name</text>
+<text x="358" y="600" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<text x="140" y="626" font-size="13" fill="#1F2937">last_name</text>
+<text x="358" y="626" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(20)</text>
+<rect x="71" y="634" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="652" font-size="13" fill="#1F2937">company</text>
+<text x="358" y="652" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(80)</text>
+<text x="140" y="678" font-size="13" fill="#1F2937">address</text>
+<text x="358" y="678" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(70)</text>
+<rect x="71" y="686" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="704" font-size="13" fill="#1F2937">city</text>
+<text x="358" y="704" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<text x="140" y="730" font-size="13" fill="#1F2937">state</text>
+<text x="358" y="730" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<rect x="71" y="738" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="756" font-size="13" fill="#1F2937">country</text>
+<text x="358" y="756" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<text x="140" y="782" font-size="13" fill="#1F2937">postal_code</text>
+<text x="358" y="782" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(10)</text>
+<rect x="71" y="790" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="808" font-size="13" fill="#1F2937">phone</text>
+<text x="358" y="808" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(24)</text>
+<text x="140" y="834" font-size="13" fill="#1F2937">fax</text>
+<text x="358" y="834" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(24)</text>
+<rect x="71" y="842" width="298" height="26" fill="#F9FAFB"/>
+<text x="140" y="860" font-size="13" fill="#1F2937">email</text>
+<text x="358" y="860" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(60)</text>
+<rect x="80" y="873" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="92" y="885" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="140" y="886" font-size="13" fill="#1F2937">support_rep_id</text>
+<text x="358" y="886" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="430" y="520" width="300" height="270" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M430,556 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="444" y="544" font-size="15" font-weight="bold" fill="#FFFFFF">invoice</text>
+<rect x="440" y="561" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="452" y="573" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="500" y="574" font-size="13" font-weight="bold" fill="#1F2937">invoice_id</text>
+<text x="718" y="574" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="431" y="582" width="298" height="26" fill="#F9FAFB"/>
+<rect x="440" y="587" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="452" y="599" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="500" y="600" font-size="13" fill="#1F2937">customer_id</text>
+<text x="718" y="600" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<text x="500" y="626" font-size="13" fill="#1F2937">invoice_date</text>
+<text x="718" y="626" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">date</text>
+<rect x="431" y="634" width="298" height="26" fill="#F9FAFB"/>
+<text x="500" y="652" font-size="13" fill="#1F2937">billing_address</text>
+<text x="718" y="652" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(70)</text>
+<text x="500" y="678" font-size="13" fill="#1F2937">billing_city</text>
+<text x="718" y="678" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<rect x="431" y="686" width="298" height="26" fill="#F9FAFB"/>
+<text x="500" y="704" font-size="13" fill="#1F2937">billing_state</text>
+<text x="718" y="704" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<text x="500" y="730" font-size="13" fill="#1F2937">billing_country</text>
+<text x="718" y="730" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(40)</text>
+<rect x="431" y="738" width="298" height="26" fill="#F9FAFB"/>
+<text x="500" y="756" font-size="13" fill="#1F2937">billing_postal_code</text>
+<text x="718" y="756" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(10)</text>
+<text x="500" y="782" font-size="13" fill="#1F2937">total</text>
+<text x="718" y="782" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">numeric(10,2)</text>
+<rect x="790" y="520" width="300" height="166" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M790,556 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="804" y="544" font-size="15" font-weight="bold" fill="#FFFFFF">invoice_line</text>
+<rect x="800" y="561" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="812" y="573" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="860" y="574" font-size="13" font-weight="bold" fill="#1F2937">invoice_line_id</text>
+<text x="1078" y="574" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="791" y="582" width="298" height="26" fill="#F9FAFB"/>
+<rect x="800" y="587" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="812" y="599" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="860" y="600" font-size="13" fill="#1F2937">invoice_id</text>
+<text x="1078" y="600" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="800" y="613" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="812" y="625" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="860" y="626" font-size="13" fill="#1F2937">track_id</text>
+<text x="1078" y="626" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="791" y="634" width="298" height="26" fill="#F9FAFB"/>
+<text x="860" y="652" font-size="13" fill="#1F2937">unit_price</text>
+<text x="1078" y="652" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">numeric(10,2)</text>
+<text x="860" y="678" font-size="13" fill="#1F2937">quantity</text>
+<text x="1078" y="678" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1150" y="572" width="300" height="270" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1150,608 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1164" y="596" font-size="15" font-weight="bold" fill="#FFFFFF">track</text>
+<rect x="1160" y="613" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1172" y="625" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1220" y="626" font-size="13" font-weight="bold" fill="#1F2937">track_id</text>
+<text x="1438" y="626" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1151" y="634" width="298" height="26" fill="#F9FAFB"/>
+<text x="1220" y="652" font-size="13" fill="#1F2937">name</text>
+<text x="1438" y="652" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(200)</text>
+<rect x="1160" y="665" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="1172" y="677" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="1220" y="678" font-size="13" fill="#1F2937">album_id</text>
+<text x="1438" y="678" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1151" y="686" width="298" height="26" fill="#F9FAFB"/>
+<rect x="1160" y="691" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="1172" y="703" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="1220" y="704" font-size="13" fill="#1F2937">media_type_id</text>
+<text x="1438" y="704" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1160" y="717" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="1172" y="729" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="1220" y="730" font-size="13" fill="#1F2937">genre_id</text>
+<text x="1438" y="730" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1151" y="738" width="298" height="26" fill="#F9FAFB"/>
+<text x="1220" y="756" font-size="13" fill="#1F2937">composer</text>
+<text x="1438" y="756" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(220)</text>
+<text x="1220" y="782" font-size="13" fill="#1F2937">milliseconds</text>
+<text x="1438" y="782" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1151" y="790" width="298" height="26" fill="#F9FAFB"/>
+<text x="1220" y="808" font-size="13" fill="#1F2937">bytes</text>
+<text x="1438" y="808" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<text x="1220" y="834" font-size="13" fill="#1F2937">unit_price</text>
+<text x="1438" y="834" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">numeric(10,2)</text>
+<rect x="1510" y="520" width="300" height="114" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1510,556 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1524" y="544" font-size="15" font-weight="bold" fill="#FFFFFF">album</text>
+<rect x="1520" y="561" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1532" y="573" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1580" y="574" font-size="13" font-weight="bold" fill="#1F2937">album_id</text>
+<text x="1798" y="574" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1511" y="582" width="298" height="26" fill="#F9FAFB"/>
+<text x="1580" y="600" font-size="13" fill="#1F2937">title</text>
+<text x="1798" y="600" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(160)</text>
+<rect x="1520" y="613" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="1532" y="625" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="1580" y="626" font-size="13" fill="#1F2937">artist_id</text>
+<text x="1798" y="626" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1510" y="900" width="300" height="88" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1510,936 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1524" y="924" font-size="15" font-weight="bold" fill="#FFFFFF">artist</text>
+<rect x="1520" y="941" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1532" y="953" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1580" y="954" font-size="13" font-weight="bold" fill="#1F2937">artist_id</text>
+<text x="1798" y="954" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1511" y="962" width="298" height="26" fill="#F9FAFB"/>
+<text x="1580" y="980" font-size="13" fill="#1F2937">name</text>
+<text x="1798" y="980" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(120)</text>
+<rect x="1510" y="300" width="300" height="88" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1510,336 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1524" y="324" font-size="15" font-weight="bold" fill="#FFFFFF">playlist</text>
+<rect x="1520" y="341" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1532" y="353" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1580" y="354" font-size="13" font-weight="bold" fill="#1F2937">playlist_id</text>
+<text x="1798" y="354" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1511" y="362" width="298" height="26" fill="#F9FAFB"/>
+<text x="1580" y="380" font-size="13" fill="#1F2937">name</text>
+<text x="1798" y="380" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(120)</text>
+<rect x="1510" y="150" width="300" height="88" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1510,186 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1524" y="174" font-size="15" font-weight="bold" fill="#FFFFFF">playlist_track</text>
+<rect x="1520" y="191" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1532" y="203" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<rect x="1548" y="191" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="1560" y="203" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="1580" y="204" font-size="13" font-weight="bold" fill="#1F2937">playlist_id</text>
+<text x="1798" y="204" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1511" y="212" width="298" height="26" fill="#F9FAFB"/>
+<rect x="1520" y="217" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1532" y="229" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<rect x="1548" y="217" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="1560" y="229" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="1580" y="230" font-size="13" font-weight="bold" fill="#1F2937">track_id</text>
+<text x="1798" y="230" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1510" y="660" width="300" height="88" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1510,696 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1524" y="684" font-size="15" font-weight="bold" fill="#FFFFFF">media_type</text>
+<rect x="1520" y="701" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1532" y="713" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1580" y="714" font-size="13" font-weight="bold" fill="#1F2937">media_type_id</text>
+<text x="1798" y="714" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1511" y="722" width="298" height="26" fill="#F9FAFB"/>
+<text x="1580" y="740" font-size="13" fill="#1F2937">name</text>
+<text x="1798" y="740" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(120)</text>
+<rect x="1510" y="780" width="300" height="88" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+<path d="M1510,816 v-30 a6,6 0 0 1 6,-6 h288 a6,6 0 0 1 6,6 v30 z" fill="#2F5DA8"/>
+<text x="1524" y="804" font-size="15" font-weight="bold" fill="#FFFFFF">genre</text>
+<rect x="1520" y="821" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="1532" y="833" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="1580" y="834" font-size="13" font-weight="bold" fill="#1F2937">genre_id</text>
+<text x="1798" y="834" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">integer</text>
+<rect x="1511" y="842" width="298" height="26" fill="#F9FAFB"/>
+<text x="1580" y="860" font-size="13" fill="#1F2937">name</text>
+<text x="1798" y="860" font-size="12" fill="#6B7280" text-anchor="end" font-family="Courier New, monospace">varchar(120)</text>
+<path d="M370,203.0 H390 V99.0 H370" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M381,203.0 L370,197.0 M381,203.0 L370,209.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M379,93.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M70,881.0 H50 V99.0 H70" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M59,881.0 L70,875.0 M59,881.0 L70,887.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M61,93.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M430,595.0 H400 V569.0 H370" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M419,595.0 L430,589.0 M419,595.0 L430,601.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M379,563.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M790,595.0 H760 V569.0 H730" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M779,595.0 L790,589.0 M779,595.0 L790,601.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M739,563.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1090,621.0 H1120 V621.0 H1150" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1101,621.0 L1090,615.0 M1101,621.0 L1090,627.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1141,615.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1450,673.0 H1492 V569.0 H1510" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1461,673.0 L1450,667.0 M1461,673.0 L1450,679.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1501,563.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1450,699.0 H1480 V709.0 H1510" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1461,699.0 L1450,693.0 M1461,699.0 L1450,705.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1501,703.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1450,725.0 H1468 V829.0 H1510" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1461,725.0 L1450,719.0 M1461,725.0 L1450,731.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1501,823.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1810,621.0 H1840 V949.0 H1810" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1821,621.0 L1810,615.0 M1821,621.0 L1810,627.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1819,943.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1510,225.0 H1484 V621.0 H1450" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1499,225.0 L1510,219.0 M1499,225.0 L1510,231.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1459,615.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1810,199.0 H1840 V349.0 H1810" stroke="#2F5DA8" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+<path d="M1821,199.0 L1810,193.0 M1821,199.0 L1810,205.0" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M1819,343.0 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M70,1020 H1830" stroke="#D1D5DB"/>
+<rect x="70" y="1039" width="24" height="16" rx="3" fill="#FFF4CC"/>
+<text x="82" y="1051" font-size="10" font-weight="bold" fill="#A67C00" text-anchor="middle">PK</text>
+<text x="102" y="1052" font-size="13" fill="#1F2937">первичный ключ</text>
+<rect x="230" y="1039" width="24" height="16" rx="3" fill="#EAF1FB"/>
+<text x="242" y="1051" font-size="10" font-weight="bold" fill="#2F5DA8" text-anchor="middle">FK</text>
+<text x="262" y="1052" font-size="13" fill="#1F2937">внешний ключ</text>
+<path d="M380,1047 h60" stroke="#2F5DA8" stroke-width="1.6"/>
+<path d="M391,1047 L380,1041 M391,1047 L380,1053" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<path d="M431,1041 v12" stroke="#2F5DA8" stroke-width="1.6" fill="none"/>
+<text x="452" y="1052" font-size="13" fill="#1F2937">много строк ссылаются на одну: «лапка» — у таблицы с внешним ключом, черта — у таблицы, на которую ссылаются</text>
+</svg>
