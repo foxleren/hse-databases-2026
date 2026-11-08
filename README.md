@@ -11,7 +11,7 @@
 | `week_4/` | Семинар 4 «Запросы к одной таблице»: презентация `presentation_4.pdf`, задачи `classwork_4.ipynb` и `classwork_4_solution.ipynb`. Домашнее задание 3 — `homework_3.ipynb` |
 | `week_5/` | Семинар 5 «Агрегация в SQL»: презентация `presentation_5.pdf`, задачи `classwork_5.ipynb` |
 | `week_6/` | Семинар 6 «JOIN и операции над множествами»: презентация `presentation_6.pdf`, задачи `classwork_6.ipynb` |
-| `week_7/` | Семинар 7 «Подзапросы и общие табличные выражения»: презентация `presentation_7.pdf`, задачи `classwork_7.ipynb` |
+| `week_7/` | Семинар 7 «Подзапросы и общие табличные выражения»: презентация `presentation_7.pdf`, задачи `classwork_7.ipynb`. Домашнее задание 4 «Аналитические запросы и рекурсия» по семинарам 5–7 — `homework_4.ipynb` (20 обязательных задач) |
 | [`db/schema.md`](db/schema.md) | Учебные базы: схемы всех трёх баз и подробное описание таблиц и столбцов |
 | [`db/databases.pdf`](db/databases.pdf) | Сводка и схемы всех трёх учебных баз |
 | [`CHANGELOG.md`](CHANGELOG.md) | История изменений учебного окружения |
